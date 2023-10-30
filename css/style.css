@@ -3,3 +3,27 @@
 navbar{
     justify-content: center;
 }
+.body,#Home{
+    background-color: darkgray;
+}
+
+.body, #About{
+    background-color: lightgray;
+
+}
+img[alt=Myimage1] {
+    position: relative;
+    left: 15em;
+    bottom: 4em;
+}
+img[alt=Myimage2]{
+    position: relative;
+    left: 30em;
+    bottom: 4em;
+}
+img[alt=Myimage3]{
+    position: relative;
+    left: 15em;
+    bottom: 4em;
+
+}
