@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Playfair+Display&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Merriweather:wght@700&family=Playfair+Display&display=swap');
+
 *,
 *::after,
 *::before {
@@ -8,6 +10,9 @@
 }
 body {
     text-align: center;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
 }
 body,#Home{
     background-color: darkgray;
@@ -20,7 +25,8 @@ img[alt=Myimage1] {
     left: 11em;
     bottom: 4em;
     width: 13em;
-    transform:rotate3d(50deg) translateX(20px)
+    transform:rotate3d(50deg) translateX(20px);
+    
 }
 img[alt=Myimage2]{
     position: relative;
@@ -55,7 +61,9 @@ img[alt=Myimage3]{
     top: -1.3em;
     left: 3em; 
     bottom: 18em;
-    transform-origin: bottom center;   
+    transform-origin: bottom center;  
+    animation: wiggle ; 
+    /* rotate.. add key frames  */
 }
 #top-part span:nth-child(1) {
     transform: rotate(-11deg) translateX(-60px);
@@ -70,7 +78,10 @@ img[alt=Myimage3]{
 #bottom-part{
     position: relative;
     top: 2em;
-    bottom: 7rem;
+    right: 15rem;
+}
+#bottom-part span:nth-child(1){
+    transform: rotate(50deg)translateX(20px) translateY(50px);
 }
 /*finish the bottom curve*/
 
@@ -89,4 +100,17 @@ p.card-text{
 #Education{
     background-color: darkgrey;
 
+}
+
+@keyframes sliding{
+    from {
+        transform: translateX(0);
+        width: 100;
+    }
+    to {
+        transform: translateX(-70);
+    }
+        
+    
+    
 }
