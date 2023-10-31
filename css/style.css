@@ -20,7 +20,7 @@ img[alt=Myimage1] {
     left: 11em;
     bottom: 4em;
     width: 13em;
-    
+    transform:rotate3d(50deg) translateX(20px)
 }
 img[alt=Myimage2]{
     position: relative;
@@ -69,11 +69,24 @@ img[alt=Myimage3]{
 
 #bottom-part{
     position: relative;
-    top: -9em;
-    bottom: 0rem;
-    left: 2px;
+    top: 2em;
+    bottom: 7rem;
+}
+/*finish the bottom curve*/
+
+.carousel-item{
+    background-color: rgb(81, 76, 76);
+}
+p.card-text{
+    display: grid;
 }
 
-#bottom-part span:nth-child(1){
-    transform: rotate(50deg) translateX(5px) translateY(70px);
+.card{
+    display: inline-flex;
+    
+}
+
+#Education{
+    background-color: darkgrey;
+
 }
