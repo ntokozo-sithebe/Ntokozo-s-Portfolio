@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Playfair+Display&display=swap');
-
-navbar{
-    justify-content: center;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.body,#Home{
+body {
+    text-align: center;
+}
+body,#Home{
     background-color: darkgray;
 }
-
-
-.body, #About{
+#About{
     background-color: lightgray;
-
 }
 img[alt=Myimage1] {
     position: relative;
@@ -31,4 +34,46 @@ img[alt=Myimage3]{
     bottom: 9em;
     width: 13em;
 }
+/* Profile */
+#profile {
+    background: url('https://i.postimg.cc/dVyRxzym/LC2.jpg') no-repeat;
+    width: 23rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+#top-part{
+    position: relative;
+    background-color: white;
+    top: -12rem;
+    left: 0;
+    /*inset: similar to relation properties of left,top etc*/
+}
+#top-part span{
+    position: absolute;
+    top: -1.3em;
+    left: 3em; 
+    bottom: 18em;
+    transform-origin: bottom center;   
+}
+#top-part span:nth-child(1) {
+    transform: rotate(-11deg) translateX(-60px);
+}
+#top-part span:nth-child(3) {
+    transform: rotate(12deg) translateX(4px);
+}
+#top-part span:nth-child(4) {
+    transform: rotate(14deg) translateX(34px) translateY(2px);
+ }/*transform (property) which is like transformers( need to identify how you want the tranformation to occur ( in this case it is rotate) and then TRANSLATE is moving the object eaither on the x-axis or on the y-axis)*/
 
+#bottom-part{
+    position: relative;
+    top: -9em;
+    bottom: 0rem;
+    left: 2px;
+}
+
+#bottom-part span:nth-child(1){
+    transform: rotate(50deg) translateX(5px) translateY(70px);
+}
