@@ -73,20 +73,26 @@ img[alt=Myimage3]{
 #top-part span{
     position: absolute;
     top: -1.3em;
-    left: 3em; 
+    left: 3.1em; 
     bottom: 18em;
-    transform-origin: bottom center;  
-    animation: wiggle ; 
+    transform-origin: bottom center; 
+
+
     /* rotate.. add key frames  */
 }
+
 #top-part span:nth-child(1) {
     transform: rotate(-11deg) translateX(-60px);
+    color: white;
+    
 }
 #top-part span:nth-child(3) {
     transform: rotate(12deg) translateX(4px);
+    color: white;
 }
 #top-part span:nth-child(4) {
-    transform: rotate(14deg) translateX(34px) translateY(2px);
+    transform: rotate(14deg) translateX(35px); 
+    color: white;
  }/*transform (property) which is like transformers( need to identify how you want the tranformation to occur ( in this case it is rotate) and then TRANSLATE is moving the object eaither on the x-axis or on the y-axis)*/
 
 #bottom-part{
@@ -96,13 +102,12 @@ img[alt=Myimage3]{
 }
 #bottom-part span{
     position: absolute;
-   top: 30px;
-    
-
-
+   top: 20em;
+   bottom:-30em;
+   transform-origin:top center;
 }
 #bottom-part span:nth-child(1){
-    transform: rotate(50deg)translateX(20px) translateY(50px);
+    transform: rotate(-50deg) translateY();
 }
 /*finish the bottom curve*/
 
