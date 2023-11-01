@@ -43,15 +43,29 @@ img[alt=Myimage3]{
 /* Profile */
 #profile {
     background: url('https://i.postimg.cc/dVyRxzym/LC2.jpg') no-repeat;
-    width: 23rem;
+    padding: 5px;
+    border: solid 20px ;
+    border-radius: 50%;
+    width: 25rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
 }
+#profile{
+    from{
+        transform: rotateX('180deg');
+    color: white;
+    }
+    to{
+        transform: rotateX('180deg');
+        color:plum
+    }
+   
+}
 #top-part{
     position: relative;
-    background-color: white;
+    background-color:rgb(235, 211, 211);
     top: -12rem;
     left: 0;
     /*inset: similar to relation properties of left,top etc*/
@@ -78,7 +92,14 @@ img[alt=Myimage3]{
 #bottom-part{
     position: relative;
     top: 2em;
-    right: 15rem;
+    right: 0em;
+}
+#bottom-part span{
+    position: absolute;
+   top: 30px;
+    
+
+
 }
 #bottom-part span:nth-child(1){
     transform: rotate(50deg)translateX(20px) translateY(50px);
