@@ -14,7 +14,9 @@ body {
 font-family: 'Merriweather', serif;
 font-family: 'Playfair Display', serif;
 }
-
+section {
+    scroll-margin-block: 3rem;
+}
 body,#Home{
     background-color: darkgray;
 }
@@ -113,7 +115,7 @@ img[alt=Myimage3]{
 /*finish the bottom curve*/
 
 .carousel-item{
-    background-color: rgb(81, 76, 76);
+    background-color: hsl(0, 1%, 35%);
 }
 p.card-text{
     display: grid;
@@ -126,12 +128,19 @@ p.card-text{
 
 #Education{
     background-color: darkgrey;
-
 }
-#skills li ol{
+#Skills li ol{
     list-style-type: none;
 }
 
+#Contact{
+    background-color: darkgray;
+
+}
+
+#Contact .row:last-child {
+    height: 80vh;
+}
 
 
 @keyframes sliding{
@@ -149,3 +158,9 @@ p.card-text{
     width: 20px;
 }
     
+@media screen and (width < 700px) {
+    #Contact .row:last-child{
+        height: unset;
+        margin-bottom: .5rem;
+    }
+}
