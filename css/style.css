@@ -127,6 +127,9 @@ p.card-text{
     background-color: darkgrey;
 
 }
+#skills li ol{
+    list-style-type: none;
+}
 
 @keyframes sliding{
     from {
@@ -138,5 +141,6 @@ p.card-text{
     } 
     
 }
+
 
     
