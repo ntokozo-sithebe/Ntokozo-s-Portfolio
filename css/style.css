@@ -142,7 +142,6 @@ p.card-text{
     height: 80vh;
 }
 
-
 @keyframes sliding{
     from {
         transform: translateX(0);
