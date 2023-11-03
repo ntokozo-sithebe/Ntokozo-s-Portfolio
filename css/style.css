@@ -20,99 +20,42 @@ section {
 body,#Home{
     background-color: darkgray;
 }
+.slider{
+    scroll-snap-type: x mandatory;
+}
+
 #About{
     background-color: lightgray;
 }
-img[alt=Myimage1] {
-    position: relative;
-    left: 11em;
-    bottom: 4em;
-    width: 13em;
-    transform:rotate3d(50deg) translateX(20px);
-    
-}
-img[alt=Myimage2]{
-    position: relative;
-    left: 25em;
-    bottom: 4em;
-    width: 13em;
-}
-img[alt=Myimage3]{
-    position: relative;
-    left: 11em;
-    bottom: 9em;
-    width: 13em;
-}
+
 /* Profile */
 #profile {
     background: url('https://i.postimg.cc/dVyRxzym/LC2.jpg') no-repeat;
     padding: 5px;
     border: solid 20px ;
     border-radius: 50%;
-    width: 25rem;
+    width: 27rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
 }
-#profile{
-    from{
-        transform: rotateX('180deg');
-    color: white;
-    }
-    to{
-        transform: rotateX('180deg');
-        color:plum
-    }
-   
-}
+
 #top-part{
     position: relative;
-    background-color:rgb(235, 211, 211);
-    top: -12rem;
-    left: 0;
+    top: -16rem;
+    left: 4.5em;
+    color: white;
     /*inset: similar to relation properties of left,top etc*/
 }
-#top-part span{
-    position: absolute;
-    top: -1.3em;
-    left: 3.1em; 
-    bottom: 18em;
-    transform-origin: bottom center; 
-
-
-    /* rotate.. add key frames  */
-}
-
-#top-part span:nth-child(1) {
-    transform: rotate(-11deg) translateX(-60px);
-    color: white;
-    
-}
-#top-part span:nth-child(3) {
-    transform: rotate(12deg) translateX(4px);
-    color: white;
-}
-#top-part span:nth-child(4) {
-    transform: rotate(14deg) translateX(35px); 
-    color: white;
- }/*transform (property) which is like transformers( need to identify how you want the tranformation to occur ( in this case it is rotate) and then TRANSLATE is moving the object eaither on the x-axis or on the y-axis)*/
 
 #bottom-part{
-    position: relative;
-    top: 2em;
-    right: 0em;
-}
-#bottom-part span{
     position: absolute;
-   top: 20em;
-   bottom:-30em;
-   transform-origin:top center;
+    top: 10em;
+    right: -1em;
+    color: white;
 }
-#bottom-part span:nth-child(1){
-    transform: rotate(-50deg) translateY();
-}
-/*finish the bottom curve*/
+
 
 .carousel-item{
     background-color: hsl(0, 1%, 35%);
