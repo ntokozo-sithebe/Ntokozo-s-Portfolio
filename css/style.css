@@ -141,21 +141,29 @@ p.card-text{
 #Contact .row:last-child {
     height: 80vh;
 }
-
-@keyframes sliding{
-    from {
-        transform: translateX(0);
-        width: 100;
-    }
-    to {
-        transform: translateX(-70);
-    } 
-    
-}
-
-#testimonies img{
+marquee img{
     width: 20px;
+
 }
+
+#Testimonies .slider {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    margin-inline: auto;
+}
+#Testimonies .card {
+    width: 40rem;
+}
+
+
+#Testimonies .card-text {
+    height: 10rem;
+    overflow-y: scroll;
+
+} 
+
+    
     
 @media screen and (width < 700px) {
     #Contact .row:last-child{
