@@ -20,12 +20,9 @@ section {
 body,#Home{
     background-color: darkgray;
 }
-.slider{
-    scroll-snap-type: x mandatory;
-}
-
 #About{
     background-color: lightgray;
+
 }
 
 /* Profile */
@@ -39,7 +36,10 @@ body,#Home{
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    justify-content: center;
+    
 }
+
 
 #top-part{
     position: relative;
@@ -105,12 +105,10 @@ marquee img{
     overflow-y: scroll;
 
 } 
-
-    
     
 @media screen and (width < 700px) {
-    #Contact .row:last-child{
-        height: unset;
-        margin-bottom: .5rem;
+    img[alt=graduation-cap]{
+        width: 8em;
     }
+    
 }
