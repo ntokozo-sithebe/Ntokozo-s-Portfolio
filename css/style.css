@@ -28,33 +28,53 @@ body,#Home{
 /* Profile */
 #profile {
     background: url('https://i.postimg.cc/dVyRxzym/LC2.jpg') no-repeat;
-    padding: 5px;
-    border: solid 20px ;
+
     border-radius: 50%;
-    width: 27rem;
+    width: 23rem;
+    align-items: center;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
     justify-content: center;
     
+    
 }
 
 
 #top-part{
     position: relative;
-    top: -16rem;
-    left: 4.5em;
+    top: -17rem;
+    bottom: -20px;
+    left: 4.7em;
     color: white;
     /*inset: similar to relation properties of left,top etc*/
 }
 
 #bottom-part{
     position: absolute;
-    top: 10em;
-    right: -1em;
+    top: 8em;
+    right: 2em;
     color: white;
 }
+
+
+#profile:hover {
+    transform:translateY(-180px) ;
+    opacity: 0px;
+}
+.back{
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(to right, black white);
+    color:white;
+}
+.front, .back {
+    position: absolute;
+    left: 30em;
+    top: 10em;
+    backface-visibility: hidden;
+}
+.front
 
 
 .carousel-item{
@@ -111,4 +131,16 @@ marquee img{
         width: 8em;
     }
     
+}
+@media screen and (width < 300px) {
+    #profile.slider{
+        width: 15px;
+    }
+    #bottom-part{
+        bottom: -15px;
+        top: 20px;
+    }
+    #top-part{
+        top: 90em;
+    }
 }
