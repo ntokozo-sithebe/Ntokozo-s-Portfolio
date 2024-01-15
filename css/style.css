@@ -37,9 +37,30 @@ body,#Home{
     object-fit: cover;
     object-position: center;
     justify-content: center;
+    /* display: flex; */
+    align-content: center;
     
     
 }
+/* cards for carousel on education */
+.card{
+    width: 18rem;
+}
+ 
+/* hard skills img */
+img[alt='html,bootstrap&css']{
+    width: 18rem;
+    height: 10rem;
+}
+/* cards for project */
+.cards{
+    width: 18rem;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 
 #top-part{
@@ -125,6 +146,10 @@ marquee img{
     overflow-y: scroll;
 
 } 
+img[alt='Myaboutimage']{
+    height: 20rem;
+    width: 100%;
+}
     
 @media screen and (width < 700px) {
     img[alt=graduation-cap]{
